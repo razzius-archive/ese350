@@ -1,0 +1,12 @@
+tell application "Safari"
+   activate
+   tell application "System Events"
+       tell process "Safari"
+           repeat 30 times -- repeat 50 times -- feels like 3 seconds
+               key down (ASCII character 31) -- Down arrow
+               delay 1.0E-4
+           end repeat
+           key up (ASCII character 31) -- Down arrow
+       end tell
+   end tell
+end tell
